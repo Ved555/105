@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <title>Class 103 Neural networks </title>
+</head>
+<body>
+    <center>
+    <h1>Image Recognition</h1>
+    <h2>This app has been trained to detect the following</h2>
+    <br>
+    <p>Clock</p><hr><br>
+    <p>Book</p><hr><br>
+    <p>Lamp</p><hr><br>
+    <div id="cam"></div>
+    <div id="captured"></div>
+    <button onclick="Take_pic()">Take Picture</button>
+    <button onclick="Identify()">Identify Picture</button>
+    <h1 id="object_name"></h1>
+    <h1 id="object_accuracy"></h1>
+    </center>
+</body>
+<script src="script.js"></script>
+</html>
